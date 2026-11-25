@@ -1,8 +1,9 @@
+// One-Line Laugh-Off: the agent over-delivers on the smallest ask.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const line =
-  "My agent read my 400-page brief, understood 12%, and shipped the other 88% with total confidence. The client never noticed.";
+  "I asked my agent to write a one-liner. It wrote a 400-page brief explaining why one line was impossible. The client loved it.";
 
 // The gate allows 1-200 characters; refuse to write an over-long text.
 if (line.length < 1 || line.length > 200) {
